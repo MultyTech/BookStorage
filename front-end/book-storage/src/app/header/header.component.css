@@ -1,0 +1,292 @@
+#fh5co-logo {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  #fh5co-logo a {
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 58px;
+  }
+  #fh5co-logo a:hover, #fh5co-logo a:active, #fh5co-logo a:focus {
+    text-decoration: none;
+  }
+  
+  #fh5co-header {
+    background: #f9d623;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    margin-bottom: 26em;
+  }
+
+  /*//////////////////////////////////////////////////////////////////////////////////////
+  ////////////////// NAVIGATION  START////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////*/
+
+  .nav-title {
+    text-decoration: none;
+      font-size: 30px;
+      color: white;
+      margin-left: 20px;
+  }
+  
+  .navbar.active {
+    background: #333333;
+    border-radius: 0px;
+    padding-bottom: 10px;
+    box-shadow: 0 10px 15px rgba(25,25,25,0.1);
+  }
+  
+  #navbarResponsive{
+    width: 100%;
+  }
+  
+  .myNavBar {
+    background-color: #000000;
+    border-color: #e7e7e700;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .nav-container {
+    margin: 0px 40px 0px 40px;
+  }
+  
+  .navbar {
+    transition: all 0.4s;
+  }
+  
+  .navbar .nav-link {
+    color: #fff !important;
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar .navbar-brand {
+    color: #fff;
+  }
+  
+  .nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+  }
+  
+  
+  /* Change navbar styling on scroll */
+  
+  .navbar.active .nav-link {
+    color: #ffffff;
+  }
+  
+  .navbar.active .nav-link:hover,
+  .navbar.active .nav-link:focus {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .navbar.active .navbar-brand {
+    color: #555;
+  }
+  
+  .navbar-default .navbar-nav>.active>a, 
+  .navbar-default .navbar-nav>.active>a:hover, 
+  .navbar-default .navbar-nav>.active>a:focus {
+    color: #555;
+    background: none;
+  }
+  
+  .navBrandText{
+    padding: 0px !important;
+    margin-left: 15px;
+    width: 100%;
+  }
+  
+  .navBrand img{
+    margin-left:5px;
+  
+  }
+  
+  .navBar li>.nav-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0px;
+    background: #f9b000;
+    height: 1px;
+    width: 0;
+    transition: 0.3s;
+  }
+  .navBar li.active>.nav-link::before,
+  .navBar li>.nav-link:hover::before,
+  .navBar li>.nav-link.active::before {
+    width: 100%;
+    background: #f9b000;
+  
+  }
+  
+  .welcome-user {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+
+  /*//////////////////////////////////////////////////////////////////////////////////////
+  /////////////// NAVIGATION END /////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////////////*/
+
+  @media screen and (max-width: 480px) {
+    #fh5co-header {
+      margin-bottom: 14em;
+    }
+  }
+  #fh5co-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #fh5co-header > .container {
+    z-index: 10;
+    position: relative;
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-header {
+      height: 1000px;
+    }
+  }
+  #fh5co-header .intro {
+    margin-top: 18em;
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-header .intro {
+      margin-top: 7em;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    #fh5co-header .intro .fh5co-block {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-header .intro .btn-hardbound,
+    #fh5co-header .intro .btn-ebook,
+    #fh5co-header .intro .fh5co-block {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #fh5co-header .intro .btn-ebook {
+      display: block;
+      border-bottom: none !important;
+    }
+  }
+  #fh5co-header .intro h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 3em;
+  }
+  @media screen and (max-width: 480px) {
+    #fh5co-header .intro h2 {
+      text-align: center;
+    }
+  }
+  #fh5co-header .intro a {
+    color: rgba(255, 255, 255, 0.95);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  #fh5co-header .intro a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-header .intro a {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      text-align: center;
+    }
+  }
+  #fh5co-header .intro .btn {
+    border-bottom: none !important;
+    background: #000 !important;
+    border: none;
+    position: relative;
+  }
+  #fh5co-header .intro .btn:hover {
+    background: #fff !important;
+    color: #000;
+  }
+  #fh5co-header .intro .btn .price {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 4px 15px;
+    background: #52d3aa;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    #fh5co-header .intro .btn .price {
+      right: 0;
+    }
+  }
+  #fh5co-header .fh5co-intro-img {
+    position: relative;
+    bottom: -10em;
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-header .fh5co-intro-img {
+      bottom: -2em;
+    }
+  }
+  #fh5co-header .fh5co-intro-img img {
+    max-width: 480px;
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-header .fh5co-intro-img .img-1 {
+      max-width: 380px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #fh5co-header .fh5co-intro-img .img-1 {
+      max-width: 100%;
+    }
+  }
+  #fh5co-header .fh5co-intro-img .img-2 {
+    position: absolute;
+    top: 5em;
+    right: -3em;
+  }
+  @media screen and (max-width: 992px) {
+    #fh5co-header .fh5co-intro-img .img-2 {
+      right: -10em;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-header .fh5co-intro-img img {
+      max-width: 100%;
+    }
+  }
+
+  
