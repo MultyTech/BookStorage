@@ -1,5 +1,4 @@
-﻿using Data.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -19,6 +18,12 @@ namespace Data.Models
         public string Content { get; set; }
 
         [Required]
-        public int Author { get; set; }
+        public string BookId { get; set; }
+        public Book Book { get; set; }
+
+        [Required]
+        public string UserId { get; set; }
+
+        public ApplicationUser User { get; set; }
     }
 }

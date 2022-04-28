@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Data.Common
+namespace Data.Models
 {
     public abstract class BaseModel<TKey>
     {

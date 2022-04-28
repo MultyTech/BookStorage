@@ -1,17 +1,17 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNet.Identity.EntityFramework;
+
 
 namespace Data.Models
 {
-    public class ApplicationUser : IdentityUser
+    public class ApplicationRole: IdentityRole
     {
-        public ApplicationUser()
+        public ApplicationRole()
         {
             this.Id = Guid.NewGuid().ToString();
-            this.Books = new HashSet<Book>();
-            this.Comments = new HashSet<Comment>();
+            this.Users = new HashSet<ApplicationUser>();
         }
 
         [Key]
@@ -27,10 +27,8 @@ namespace Data.Models
 
         [Required]
         [StringLength(50, ErrorMessage = "Password should be between 3 and 50 characters!", MinimumLength = 3)]
-        public string Password { get; set; }
+        public string Name { get; set; }
 
-        public ICollection<Book> Books { get; set; }
-
-        public ICollection<Comment> Comments { get; set; }
+        public ICollection<ApplicationUser> Users { get; set; }
     }
 }
