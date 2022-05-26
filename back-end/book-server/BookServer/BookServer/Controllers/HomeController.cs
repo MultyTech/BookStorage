@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Services.Home;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ namespace BookServer.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController()
+        public HomeController(IHomeService)
         {
 
         }
