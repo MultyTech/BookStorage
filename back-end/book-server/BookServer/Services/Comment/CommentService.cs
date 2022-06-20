@@ -8,7 +8,7 @@ namespace Services.Comment
 {
     public class CommentService
     {
-        //snkasn
-        //sfsdk
+        //snake
+        //cat
     }
 }
